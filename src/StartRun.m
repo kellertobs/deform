@@ -53,7 +53,6 @@ CTX.MP.pert  =  InitPert(CTX.FE,CTX.INIT.PertSmooth,CTX.INIT.PertSymmetric);
 
 CTX  =  UpdateMaterialPoints(CTX);
 
-
 %*****  Initialise solution vector and scaling matrix  ********************
 
 CTX.SL.S  =  zeros(2*CTX.FE.NU+CTX.FE.NP,1);
@@ -61,8 +60,6 @@ CTX.SL.S  =  zeros(2*CTX.FE.NU+CTX.FE.NP,1);
 
 %*****  plot initial condition and save to file  **********************
 
-if strcmp(CTX.IO.LivePlot,'ON'); LivePlotting(CTX); end
-SaveToFile(CTX);
 CTX.IO.frame  =  1;
 
     
