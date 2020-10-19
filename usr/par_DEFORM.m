@@ -15,10 +15,10 @@ CTX.SL.maxits        =  3;                       % max non-linear iterations
 CTX.SL.atol          =  1.e-8;                   % absolute convergence tolerance (precond. residual norm)
 CTX.SL.rtol          =  5.e-3;                   % relative convergence tolerance
 
-CTX.SL.theta_it      =  0.80;                    % iterative relaxation parameter
+CTX.SL.theta_it      =  0.8;                     % iterative relaxation parameter
 CTX.SL.theta_dt      =  0.5;                     % time-step weighting parameter (0.5 = Cranck-Nicolson; 0 = Forward Euler; 1 = Backward Euler)
 
-CTX.SL.Smooth        =  0.50;                    % Smoothing factor to regularise viscosity
+CTX.SL.Smooth        =  1.0;                     % Smoothing factor to regularise viscosity
 CTX.SL.StabFact      =  1.e-24;                  % Stabilisation factor for P-coefficient matrix
 CTX.SL.RhoRef        =  0;                       % reference density (= 0 for full P, ~= 0 for dynamic P)
 
@@ -49,7 +49,7 @@ CTX.TIME.end         =  5e5 * CTX.TIME.spyr;     % stopping time for simulation 
 %*****  I/O and live plotting options  ************************************
 
 CTX.IO.nwrite        =  10;                      % time steps between output frames
-CTX.IO.LivePlot      = 'ON';                     % switch ON for live output plotting
+CTX.IO.LivePlot      = 'OFF';                    % switch ON for live output plotting
 CTX.IO.PlotStyle     = 'srf_rr';                 % 'img' = image(), 'srf' = surface(), 
                                                  % '..._lr' = reflected left,
                                                  % '..._rr' = reflected right
@@ -63,9 +63,9 @@ CTX.PHYS.RConst      =  8.314;                   % universal gas constant [J/K/m
 %*****  set initial conditions for topography  ****************************
 
 CTX.INIT.TopoMode    =  'peak';                  % initial topography mode 'flat', 'peak', 'slope'
-CTX.INIT.TopoHeight  =  0.0e3;                   % set height for initial topography
-CTX.INIT.TopoWidth   =  1.0e6;                   % set width for initial topography
-CTX.INIT.TopoXLoc    =  CTX.FE.W;                % set x-location for initial topography
+CTX.INIT.TopoHeight  =  0.01e3;                  % set height for initial topography
+CTX.INIT.TopoWidth   =  CTX.FE.W/4;              % set width for initial topography
+CTX.INIT.TopoXLoc    =  CTX.FE.W/2;              % set x-location for initial topography
 
 
 %*****  set initial condition for subsurface volume source  ***************
