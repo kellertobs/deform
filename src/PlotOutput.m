@@ -13,7 +13,7 @@ comp     =  1;
 style    =  'img';
 hzv      =  false;
 printfig =  false;
-minval   =  1e-32;
+minval   = -1e+32;
 maxval   =  1e+32;
 
 format  =  '-dpng';

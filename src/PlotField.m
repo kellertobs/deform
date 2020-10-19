@@ -53,22 +53,22 @@ end
 switch style(end-2:end)
     
     case '_rr'
-        X = [X,2.*FE.W./scale-fliplr(X)];
+        X = [X,2.*mean(X(:,end))-fliplr(X)];
         Z = [Z,fliplr(Z)];
         A = [A,fliplr(A)];
 
     case '_rl'
-        X = [FE.W./scale-fliplr(X),X+FE.W./scale];
+        X = [mean(X(:,end))-fliplr(X),X+mean(X(:,end))];
         Z = [fliplr(Z),Z];
         A = [fliplr(A),A];
         
     case 'rrU'
-        X = [X,2.*FE.W./scale-fliplr(X)];
+        X = [X,2.*mean(X(:,end))-fliplr(X)];
         Z = [Z, fliplr(Z)];
         A = [A,-fliplr(A)];
 
     case 'rlU'
-        X = [FE.W./scale-fliplr(X),X+FE.W./scale];
+        X = [mean(X(:,end))-fliplr(X),X+mean(X(:,end))];
         Z = [ fliplr(Z),Z];
         A = [-fliplr(A),A];
 end
