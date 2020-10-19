@@ -33,7 +33,7 @@ FE.CoordQ2(:,2)  =  FEo.CoordQ2(:,2) + W .* CTX.TIME.step;
 
 FE  =  UpdateFE(FE);
 
-if (FE.MaxDef/FE.MinDef > 1000 || max(FE.ElVol)/min(FE.ElVol) > 1000)
+if (FE.MaxDef/FE.MinDef > 1e4 || max(FE.ElVol)/min(FE.ElVol) > 1e4)
     error('!!! FE mesh too deformed to continue !!!')
 end
 
