@@ -121,7 +121,7 @@ CTX.INIT.PertEta        =  0.05;                 % amplitude of cohesion perturb
 
 CTX.PROP.n      =  [      1;       2;       3];  % material ID numbers
 CTX.PROP.Rho    =  [   2500;    2500;    2500];  % material densities [kg/m3]
-CTX.PROP.Eta    =  [  1e+22;   1e+23;   1e+23];  % material viscosities [Pas]
+CTX.PROP.Eta    =  [  1e+21;   1e+23;   1e+22];  % material viscosities [Pas]
 CTX.PROP.G      =  [ 1.e+11;  1.e+11;  1.e+11];  % material shear moduli [Pa]
 CTX.PROP.Coh    =  [   3e+7;    3e+7;    3e+7];  % material cohesions [Pa]
 CTX.PROP.Frict  =  [    0.5;     0.5;     0.5];  % material friction angles [deg]
