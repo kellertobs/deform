@@ -60,9 +60,9 @@ elseif strcmp(INIT.MatMode(1:5),'multi')
     
     for i = 1:2:n
         ind          =  COORD(:,2) < h0-(i-1)*dh & COORD(:,2) >= h0- i   *dh;
-        MP.Mat(ind)  =  INIT.Mat(2);
-        ind          =  COORD(:,2) < h0- i   *dh & COORD(:,2) >= h0-(i+1)*dh;
         MP.Mat(ind)  =  INIT.Mat(3);
+        ind          =  COORD(:,2) < h0- i   *dh & COORD(:,2) >= h0-(i+1)*dh;
+        MP.Mat(ind)  =  INIT.Mat(2);
     end
     
 end

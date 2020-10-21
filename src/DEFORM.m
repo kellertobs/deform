@@ -70,7 +70,7 @@ while CTX.TIME.total < CTX.TIME.end
     
     PrintDiagnostics(CTX);
          
-    if  mod(CTX.TIME.istep,CTX.IO.nwrite) == 0
+    if  mod(CTX.TIME.istep-1,CTX.IO.nwrite) == 0
         
         
         %*****  live plotting some output variables  **********************
