@@ -81,7 +81,7 @@ if strcmp(style(1:3),'qui') || strcmp(name(1),'V')
     end
 end
 
-fh = figure(100);
+fh = figure(100); set(gcf,'Visible','on');
 if holdfig
     hold on;
 else
