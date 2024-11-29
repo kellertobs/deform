@@ -32,7 +32,7 @@ COORDZ  =  reshape(FE.CoordU(FE.El2Un,2),FE.NEl,FE.UpEl);
 
 for ip = 1:FE.IPpEl
     
-    dNdSU        =  FE.dNdSiU(:,:,ip);
+    dNdSU         =  FE.dNdSiU(:,:,ip);
     
     Jx            =  COORDX*dNdSU';
     Jz            =  COORDZ*dNdSU';
@@ -57,7 +57,7 @@ for ip = 1:FE.IPpEl
     
 end
   
-%*****  interpolate strain rates on tracers  ******************************
+%*****  compute shear strain rate components  *****************************
 
 MP.DivV       =  Edot(:,1) + Edot(:,2);
 MP.Edot(:,1)  =  Edot(:,1) - 1/3.*MP.DivV;

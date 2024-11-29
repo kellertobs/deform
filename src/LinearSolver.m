@@ -1,4 +1,4 @@
-% LinearSolver    EDIFICE: Calculates solution to linear Stokes equations
+% LinearSolver    DEFORM: Calculates solution to linear Stokes equations
 %
 % [CTX] = LinearSolver(MP,CTX)
 %

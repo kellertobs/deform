@@ -1,4 +1,4 @@
-% NonlinearSolver    EDIFICE: Calculates solution to non-linear Stokes equations
+% NonlinearSolver    DEFORM: Calculates solution to non-linear Stokes equations
 %
 % [CTX] = NonlinearSolver(MP,CTX)
 %

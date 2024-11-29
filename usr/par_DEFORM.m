@@ -1,6 +1,6 @@
 
 %**************************************************************************
-%**********  Set Parameters for EDIFICE  **********************************
+%**********  Set Parameters for DEFORM  ***********************************
 %**************************************************************************
 
 %*****  Run options  ******************************************************
@@ -26,7 +26,7 @@ CTX.SL.RhoRef        =  0;                       % reference density (= 0 for fu
 %*****  finite-element mesh and Lagrangian particles options  *************
 
 CTX.FE.ElType        = 'Q1P0';                   % finite-element type (Q1P0, Q1Q1, Q2Q1)
-CTX.FE.nblock        =  6400;                    % block size for vectorised matrix assembly 
+CTX.FE.nblock        =  102400;                  % block size for vectorised matrix assembly 
 
 CTX.FE.nx            =  100;                     % number of elements in x-direction on FE mesh
 CTX.FE.nz            =  100;                     % number of elements in z-direction on FE mesh

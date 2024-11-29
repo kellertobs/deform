@@ -42,9 +42,6 @@ if strcmp(type,'P0')
     n             =  length(S(1,:));
     N             =  zeros(1,n);
     dNdS          =  zeros(2,1,n);
- 
-    z             =  S(1,:);
-    x             =  S(2,:);
     
     N(1,:)        =  1;
     

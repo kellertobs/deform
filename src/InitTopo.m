@@ -1,5 +1,5 @@
 
-% InitTop    EDIFICE: Initialise topography
+% InitTop    DEFORM: Initialise topography
 %
 % [CTX] = InitTopo(CTX)
 %

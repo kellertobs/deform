@@ -1,5 +1,5 @@
 
-% StartRun  Start simulation run in EREBUS
+% StartRun  Start simulation run in DEFORM
 %
 %   [CTX] = StartRun(CTX)
 %   Prepares data structures and sets initial conditions from input
@@ -53,7 +53,8 @@ CTX.MP.pert  =  InitPert(CTX.FE,CTX.INIT.PertSmooth,CTX.INIT.PertSymmetric);
 
 CTX  =  UpdateMaterialPoints(CTX);
 
-%*****  Initialise solution vector and scaling matrix  ********************
+
+%*****  Initialise solution vector  ***********************************
 
 CTX.SL.S  =  zeros(2*CTX.FE.NU+CTX.FE.NP,1);
 

@@ -1,4 +1,4 @@
-% AdvectFE    EDIFICE: Advection of FE mesh
+% AdvectFE    DEFORM: Advection of FE mesh
 
 % CTX = AdvectionFE(CTX) 
 

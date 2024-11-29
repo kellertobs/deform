@@ -24,7 +24,7 @@ fprintf('**************************************************************\n\n\n')
 %*****  check if parameter structure has been prepared
 
 if ~exist('CTX','var')
-    error('No parameter structure available to run EDIFICE');
+    error('No parameter structure available to run DEFORM');
 end
 
 
@@ -82,6 +82,7 @@ while CTX.TIME.total < CTX.TIME.end
         
         PlotOutput(CTX,CTX.IO.frame,1,CTX.IO.frame,'W','lin','title','z-velocity [mm/yr]','mult',-3600*24*365.25*1000,'tag','zVel','srf_rr','print');
         PlotOutput(CTX,CTX.IO.frame,1,CTX.IO.frame,'U','lin','title','x-velocity [mm/yr]','mult', 3600*24*365.25*1000,'tag','xVel','srf_rrU','print');
+        PlotOutput(CTX,CTX.IO.frame,1,CTX.IO.frame,'P','lin','title','pressure [MPa]','mult', 1e-6,'tag','Prs','srf_rr','print');
         PlotOutput(CTX,CTX.IO.frame,1,CTX.IO.frame,'EII','comp',1,'min',1e-18,'log','title','shear strain-rate [log10 1/s]'  ,'tag','StrRTot','srf_rr','print');
         PlotOutput(CTX,CTX.IO.frame,1,CTX.IO.frame,'EII','comp',2,'min',1e-18,'log','title','viscous strain-rate [log10 1/s]','tag','StrRVis','srf_rr','print');
         PlotOutput(CTX,CTX.IO.frame,1,CTX.IO.frame,'EII','comp',3,'min',1e-18,'log','title','elastic strain-rate [log10 1/s]','tag','StrREla','srf_rr','print');

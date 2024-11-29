@@ -1,4 +1,4 @@
-% InitPert    EDIFICE: Initialise reference perturbation field
+% InitPert    DEFORM: Initialise reference perturbation field
 %
 % [pert]  =  InitPert(FE,n,sym)
 %

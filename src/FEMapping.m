@@ -1,4 +1,4 @@
-% FeMapping    Create mapping arrays for use in EREBUS
+% FeMapping    Create mapping arrays for use in DEFORM
 %
 % [FE] = FeMapping(FE)
 %

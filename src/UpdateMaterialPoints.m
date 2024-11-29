@@ -1,5 +1,5 @@
 
-% UpdateMaterialProps    EDIFICE: Update material properties according to current solution
+% UpdateMaterialProps    DEFORM: Update material properties according to current solution
 %
 % [CTX] = UpdateMaterialProps(CTX)
 %

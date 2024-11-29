@@ -1,4 +1,4 @@
-% InitFM    EDIFICE: Set fluid mechanics initial condition in EDIFICE
+% InitFM    DEFORM: Set fluid mechanics initial condition in DEFORM
 %
 % [CTX] = InitFM(CTX)
 %

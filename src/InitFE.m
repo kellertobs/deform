@@ -1,5 +1,5 @@
 
-% InitFE    Create 2D finite element mesh for use in EDIFICE
+% InitFE    Create 2D finite element mesh for use in DEFORM
 %
 % [FE] = InitFE(FE)
 %
